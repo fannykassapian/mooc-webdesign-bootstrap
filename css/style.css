@@ -1,0 +1,255 @@
+.navbar{
+  background-color: #FFFFFF;
+}
+
+.navbar.navbar-expand-lg.fixed-top.navbar-dark{
+  height:110px;
+}
+
+
+.navbar.navbar-expand-lg.fixed-top.navbar-dark a {
+  font-family: "Tajawal";
+  color: #40434E;
+}
+
+.navbar-brand {
+  font-family: "Tajawal";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.collapse.navbar-collapse ul li{
+  font-size:1.2rem;
+}
+
+
+.navbar.navbar-expand-lg.fixed-top.navbar-dark a:hover, a:active{
+  color:#FC4C02;
+}
+
+.active a{
+  color:#FC4C02;
+}
+
+.fas.fa-bars{
+  color:#40434E;
+  font-size:1.5rem;
+}
+
+.fas.fa-bars:hover, .fas.fa-bars:active{
+  color:#FC4C02;
+}
+
+#navbarToggler{
+  background-color: white;
+  text-align: center;
+}
+
+body{
+  padding-top: 110px;
+}
+
+.footer{
+  background-color: #BFEDEC;
+  color: #40434E;
+  font-family: "lato";
+  text-align: center;
+}
+
+.footer a{
+  font-size: 2rem;
+  color: #40434E;
+}
+
+.footer a:hover, a:active{
+  color: #40434E;
+}
+
+.intro.text-center{
+  display:block;
+  height:100vh;
+  width:100vw;
+  margin-bottom: 20px;
+}
+
+.custom-img{
+  height: -webkit-calc(100vh - 65px); /* google, safari */
+  height: -moz-calc(100vh - 65px); /* firefox */
+  overflow:hidden;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width:100%;
+}
+
+#cat1{
+  font-family: "Pacifico";
+  font-size: 2rem;
+  color:#FC4C02;
+}
+
+#cat2, #cat3 {
+  font-family: "Lato";
+  font-size: 1.5rem;
+  color:#40434E;
+}
+
+#cat3 {
+  font-style: italic;
+  font-size:1.2rem;
+}
+
+.btn.btn-intro{
+  background-color: #17BEBB;
+  font-family: "Lato";
+  color:#FFFFFF;
+  padding:15px;
+  border-radius: 50px;
+}
+
+.btn.btn-intro:hover, .btn.btn-intro:active{
+  background-color:#EA526F;
+}
+
+.card{
+  background-color: #FCEADE;
+  border:none;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn.btn-card{
+  border:solid;
+  border-width: 1px;
+  border-color:#17BEBB;
+  background-color:#FCEADE;
+  font-family: "Lato";
+  color:#17BEBB;
+  padding:15px;
+  border-radius: 50px;
+}
+
+
+.btn.btn-card:hover, .btn.btn-card:active{
+  background-color:#FCEADE;
+  border-color:#EA526F;
+  color:#EA526F;
+}
+
+.card-title{
+  color: #FF8A5B;
+  font-weight: 800;
+  font-family: "Tajawal";
+}
+
+.card-text{
+  color: #40434E;
+  font-family: "Lato";
+  font-style: italic;
+}
+
+.card-location{
+  background-image: url("../img/index24.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cat4{
+  font-family: "Pacifico";
+  font-size: 2rem;
+  color:#FFFFFF;
+}
+
+#cat5{
+  font-family: "Lato";
+  font-size: 1.5rem;
+  color:#FFFFFF;
+}
+
+.btn-location{
+  border:solid;
+  border-width: 1px;
+  border-color:#FFFFFF;
+  background-color:none;
+  font-family: "Lato";
+  color:#FFFFFF;
+  padding:15px;
+  border-radius: 50px;
+}
+
+.btn.btn-location:hover, .btn.btn-location:active{
+  background-color:#FFFFFF;
+  border-color:#FFFFFF;
+  color:#40434E;
+}
+
+.card-newsletter{
+  background-color: #17BEBB;
+}
+
+.card-newsletter h4, .card-newsletter h5{
+  color:#FFFFFF;
+}
+
+/* Calendar */
+.schedule h4{
+  font-family: "Pacifico";
+  color:#40434E;
+  font-size: 2rem;
+}
+
+.days{
+  background-color:#FCEADE;
+  color:#40434E;
+}
+
+@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+.pilates{
+  border:solid;
+  border-color: #FC4C02;
+  border-width: 1px;
+  color:#FC4C02;
+}
+
+.meditation{
+  border:solid;
+  border-color: #EA526F;
+  border-width: 1px;
+}
+
+.yoga{
+  border:solid;
+  border-color:#17BEBB;
+  border-width: 1px;
+}
+
+.badge{
+  background-color:#FFFFFF;
+  color:black;
+  padding:30px;
+}
+
+.prices h2{
+  font-family: "Pacifico";
+  color:#40434E;
+  font-size: 2rem;
+}
+
+.fas.fa-star{
+  color:#17BEBB;
+}
