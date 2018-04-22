@@ -1,3 +1,5 @@
+/* Common styling to all pages */
+/* Navbar */
 .navbar{
   background-color: #FFFFFF;
 }
@@ -5,7 +7,6 @@
 .navbar.navbar-expand-lg.fixed-top.navbar-dark{
   height:110px;
 }
-
 
 .navbar.navbar-expand-lg.fixed-top.navbar-dark a {
   font-family: "Tajawal";
@@ -22,7 +23,6 @@
   font-size:1.2rem;
 }
 
-
 .navbar.navbar-expand-lg.fixed-top.navbar-dark a:hover, a:active{
   color:#FC4C02;
 }
@@ -31,6 +31,7 @@
   color:#FC4C02;
 }
 
+/* Toggler */
 .fas.fa-bars{
   color:#40434E;
   font-size:1.5rem;
@@ -45,10 +46,12 @@
   text-align: center;
 }
 
+/* Body begins after navbar ends */
 body{
   padding-top: 110px;
 }
 
+/* Footer */
 .footer{
   background-color: #BFEDEC;
   color: #40434E;
@@ -65,10 +68,13 @@ body{
   color: #40434E;
 }
 
+/* index.html */
+/* Intro background image, text & button */
 .container-fluid.intro{
   background-image: url("../img/index15.png");
   background-size: cover;
   background-repeat: no-repeat;
+  /* Adapt the height of the image to navbar height */
   height: -webkit-calc(100vh - 65px); /* google, safari */
   height: -moz-calc(100vh - 65px); /* firefox */
   width:100vw;
@@ -113,6 +119,7 @@ body{
   background-color:#EA526F;
 }
 
+/* Cards, buttons, text (same style for prices.html) */
 .card{
   background-color: #FCEADE;
   border:none;
@@ -151,6 +158,7 @@ body{
   font-style: italic;
 }
 
+/* card with background image (location) */
 .card-location{
   background-image: url("../img/index24.png");
   background-size: cover;
@@ -186,6 +194,7 @@ body{
   color:#40434E;
 }
 
+/* Newsletter card */
 .card-newsletter{
   background-color: #17BEBB;
 }
@@ -194,6 +203,7 @@ body{
   color:#FFFFFF;
 }
 
+/* schedule.html */
 /* Calendar */
 .schedule h4{
   font-family: "Pacifico";
@@ -204,18 +214,6 @@ body{
 .days{
   background-color:#FCEADE;
   color:#40434E;
-}
-
-@media (max-width:575px) {
-    .display-4 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 576px) {
-    .day {
-        height: 14.2857vw;
-    }
 }
 
 .pilates{
@@ -237,6 +235,20 @@ body{
   border-width: 1px;
 }
 
+/* Responsive design for calendar */
+@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+/* prices.html */
 .badge{
   background-color:#FFFFFF;
   color:black;
