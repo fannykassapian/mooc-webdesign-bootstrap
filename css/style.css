@@ -65,17 +65,16 @@ body{
   color: #40434E;
 }
 
-.intro.text-center{
-  display:block;
-  height:100vh;
-  width:100vw;
-  margin-bottom: 20px;
-}
-
-.custom-img{
+.container-fluid.intro{
+  background-image: url("../img/index15.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: -webkit-calc(100vh - 65px); /* google, safari */
   height: -moz-calc(100vh - 65px); /* firefox */
+  width:100vw;
   overflow:hidden;
+  margin-bottom: 20px;
+  padding:0px;
 }
 
 .caption {
