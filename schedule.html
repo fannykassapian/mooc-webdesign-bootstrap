@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Pilates Marseille</title>
-  <link rel="icon" type="image/png" href="img/pingu1.png"/>
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
 
   <!-- Change: Added Bootstrap CSS link (it's therefore not using the downloaded version coming with the template, but the CDN) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -36,11 +36,13 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <a class="navbar-brand ml-5" href="index.html">Pilates Marseille</a>
+      <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
         <i class="fas fa-bars"></i>
         </span>
       </button>
+      <!-- Navs -->
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mr-5">
           <li class="nav-item active">
@@ -63,6 +65,7 @@
     </nav>
   </header>
 
+  <!-- Calendar: "No events" shown by default on smaller screen, deactivated when an event is activated. Make sure to adapt class & title (meditation, pilates, yoga) of <a> tags to content (see CSS) -->
   <section class="schedule">
     <div class="container-fluid">
       <header>
@@ -93,7 +96,7 @@
             <small class="col d-sm-none text-center text-muted">Tuesday</small>
             <span class="col-1"></span>
           </h5>
-          <p class="d-sm-none">No events</p>
+          <!-- <p class="d-sm-none">No events</p> -->
           <a class="meditation event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Meditation">xx:xx-xx:xx: Meditation</a>
           <!-- <a class="pilates event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Pilates">xx:xx-xx:xx: Pilates</a> -->
           <a class="yoga event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Yoga">xx:xx-xx:xx: Yoga</a>
@@ -103,7 +106,7 @@
             <small class="col d-sm-none text-center text-muted">Wednesday</small>
             <span class="col-1"></span>
           </h5>
-          <p class="d-sm-none">No events</p>
+          <!-- <p class="d-sm-none">No events</p> -->
           <!-- <a class="meditation event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Meditation">xx:xx-xx:xx: Meditation</a> -->
           <a class="pilates event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Pilates">xx:xx-xx:xx: Pilates</a>
           <!-- <a class="yoga event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Yoga">xx:xx-xx:xx: Yoga</a> -->
@@ -113,7 +116,7 @@
             <small class="col d-sm-none text-center text-muted">Thursday</small>
             <span class="col-1"></span>
           </h5>
-          <p class="d-sm-none">No events</p>
+          <!-- <p class="d-sm-none">No events</p> -->
           <a class="meditation event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Meditation">xx:xx-xx:xx: Meditation</a>
           <a class="pilates event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Pilates">xx:xx-xx:xx: Pilates</a>
           <a class="yoga event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Yoga">xx:xx-xx:xx: Yoga</a>
@@ -123,7 +126,7 @@
             <small class="col d-sm-none text-center text-muted">Friday</small>
             <span class="col-1"></span>
           </h5>
-          <p class="d-sm-none">No events</p>
+          <!-- <p class="d-sm-none">No events</p> -->
           <!-- <a class="meditation event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Meditation">xx:xx-xx:xx: Meditation</a> -->
           <a class="pilates event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Pilates">xx:xx-xx:xx: Pilates</a>
           <!-- <a class="yoga event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small" title="Yoga">xx:xx-xx:xx: Yoga</a> -->
@@ -151,6 +154,7 @@
     </div>
   </section>
 
+  <!-- Add some info -->
   <section class="container py-3">
     <span>
       PS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -171,6 +175,7 @@
       </div>
   </footer>
 
+  <!-- Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
