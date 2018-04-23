@@ -2,32 +2,33 @@
 /* Navbar */
 .navbar{
   background-color: #FFFFFF;
-}
-
-.navbar.navbar-expand-lg.fixed-top.navbar-dark{
   height:110px;
 }
 
-.navbar.navbar-expand-lg.fixed-top.navbar-dark a {
+.nav-link{
   font-family: "Tajawal";
-  color: #40434E;
+  color:#40434E;
+  font-size:1.2rem;
 }
 
+.nav-link:hover, .nav-link:active{
+  color:#FC4C02;
+}
+
+/* Current page */
+.nav-link.current{
+  color:#FC4C02;
+}
+
+/* Brand at top left */
 .navbar-brand {
   font-family: "Tajawal";
   font-size: 1.5rem;
   font-weight: bold;
+  color:#40434E;
 }
 
-.collapse.navbar-collapse ul li{
-  font-size:1.2rem;
-}
-
-.navbar.navbar-expand-lg.fixed-top.navbar-dark a:hover, a:active{
-  color:#FC4C02;
-}
-
-.active a{
+.navbar-brand:hover{
   color:#FC4C02;
 }
 
@@ -69,6 +70,12 @@ body{
 }
 
 /* index.html */
+/* Modal: Pop-up window to warn user */
+.img-modal{
+  width:100%;
+  height:100%;
+}
+
 /* Intro background image, text & button */
 .container-fluid.intro{
   background-image: url("../img/index15.png");
