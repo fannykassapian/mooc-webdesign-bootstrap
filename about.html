@@ -69,11 +69,15 @@
 
     <div class="container py-3">
       <h2 class="text-center">What?</h2>
-      <p class="text-center">text</p>
+      <p class="text-center">Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates, after whom it was named. Pilates called his method "Contrology".It is practiced worldwide, and especially in western countries such as Canada, the United States and the United Kingdom. As of 2005, there were 11 million people practicing the discipline regularly and 14,000 instructors in the United States.(source:Wikipedia)</p>
       <h2 class="text-center">Who?</h2>
-      <p class="text-center">text</p>
+      <figure>
+        <img src="img/about.jpeg" alt="friends"/>
+      </figure>
+      <p class="text-center">Some text about the instructors...</p>
       <h2 class="text-center">Where?</h2>
-      <p class="text-center">text</p>
+      <div id="map"></div>
+      <p class="text-center">Our studio is located at the heart of Marseille: Enter address...</p>
     </div>
 
   </section>
@@ -97,6 +101,26 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Google maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkdITxZw6eZgtDAztqFiez7Fd13YC_-A&callback=initMap"
+  async defer>
+  </script>
+
+  <!-- JavaScript for map -->
+  <script>
+   function initMap() {
+     var uluru = {lat: 43.261030, lng: 5.381933};
+     var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 4,
+       center: uluru
+     });
+     var marker = new google.maps.Marker({
+       position: uluru,
+       map: map
+     });
+   }
+ </script>
 
 </body>
 

@@ -283,3 +283,15 @@ body{
   color:#40434E;
   font-family:"Lato";
 }
+
+.about img{
+  width:50vw;
+  border-radius:2%;
+  display:block;
+  margin:auto;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+ }
