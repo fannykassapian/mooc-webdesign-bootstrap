@@ -189,7 +189,7 @@ body{
   border:solid;
   border-width: 1px;
   border-color:#FFFFFF;
-  background-color:none;
+  background-color:transparent;
   font-family: "Lato";
   color:#FFFFFF;
   padding:15px;
