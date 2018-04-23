@@ -258,7 +258,7 @@ body{
 /* prices.html */
 .badge{
   background-color:#FFFFFF;
-  color:black;
+  color:#40434E;
   padding:30px;
 }
 
@@ -291,7 +291,12 @@ body{
   margin:auto;
 }
 
+/* Google maps */
 #map {
   height: 400px;
-  width: 100%;
  }
+
+.about-location{
+  color: #17BEBB;
+  font-family:"Lato";
+}
