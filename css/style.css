@@ -219,6 +219,10 @@ body{
   font-size: 2rem;
 }
 
+.info{
+  font-family: "Lato";
+}
+
 .days{
   background-color:#FCEADE;
   color:#40434E;
