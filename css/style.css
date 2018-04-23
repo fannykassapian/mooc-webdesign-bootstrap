@@ -61,6 +61,7 @@ body{
 }
 
 .footer a{
+  text-decoration: none;
   font-size: 2rem;
   color: #40434E;
 }
@@ -303,5 +304,5 @@ body{
 
 /* contact.html */
 .form-group{
-  
+
 }
