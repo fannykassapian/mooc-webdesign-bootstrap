@@ -271,3 +271,15 @@ body{
 .fas.fa-star{
   color:#17BEBB;
 }
+
+/* about.html */
+.about h2{
+  font-family: "Pacifico";
+  color:#40434E;
+  font-size: 2rem;
+}
+
+.about p{
+  color:#40434E;
+  font-family:"Lato";
+}
