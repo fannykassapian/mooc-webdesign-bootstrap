@@ -23,9 +23,6 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
   <!-- Custom style -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -66,18 +63,18 @@
   </header>
 
   <section>
-    <form class="container col-sm-8">
+    <form class="container col-sm-8" id="contactform">
       <div class="form-group">
         <label for="exampleFormControlInput2">Your name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname">
+        <input type="text" class="form-control" id="name" placeholder="Name Surname" required>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Your email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Select the object of your message</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="object">
           <option>Book a trial lesson</option>
           <option>Buy units</option>
           <option>Become a member</option>
@@ -86,12 +83,8 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Type your message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
       </div>
-        <div class="form-group">
-          <label for="exampleFormControlFile1">Attach a file</label>
-          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div>
       <button type="submit" class="btn btn-primary mb-2">Send</button>
     </form>
     <div id="error_message" style="width:100%; height:100%; display:none; ">
@@ -122,6 +115,73 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Contact form JQuery -->
+  <script>
+  $(function()
+  {
+      function after_form_submitted(data)
+      {
+          if(data.result == 'success')
+          {
+              $('form#contactform').hide();
+              $('#success_message').show();
+              $('#error_message').hide();
+          }
+          else
+          {
+              $('#error_message').append('<ul></ul>');
+
+              jQuery.each(data.errors,function(key,val)
+              {
+                  $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+              });
+              $('#success_message').hide();
+              $('#error_message').show();
+
+              //reverse the response on the button
+              $('button[type="button"]', $form).each(function()
+              {
+                  $btn = $(this);
+                  label = $btn.prop('orig_label');
+                  if(label)
+                  {
+                      $btn.prop('type','submit' );
+                      $btn.text(label);
+                      $btn.prop('orig_label','');
+                  }
+              });
+
+          }//else
+      }
+
+  	$('#contactform').submit(function(e)
+        {
+          e.preventDefault();
+
+          $form = $(this);
+          //show some response on the button
+          $('button[type="submit"]', $form).each(function()
+          {
+              $btn = $(this);
+              $btn.prop('type','button' );
+              $btn.prop('orig_label',$btn.text());
+              $btn.text('Sending ...');
+          });
+
+
+                      $.ajax({
+                  type: "POST",
+                  url: 'handler.php',
+                  data: $form.serialize(),
+                  success: after_form_submitted,
+                  dataType: 'json'
+              });
+
+        });
+  });
+  </script>
+
 
 </body>
 
